@@ -10,6 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.14.2"
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/spline-sans": "^5.0.21",
+    "@fontsource-variable/spline-sans-mono": "^5.0.22",
+    "astro": "^4.14.2",
+    "astro-icon": "^1.1.1",
+    "sass": "^1.77.8",
+    "tailwindcss": "^3.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "eslint-plugin-astro": "^1.2.3"
   }
 }

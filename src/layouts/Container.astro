@@ -1,0 +1,66 @@
+---
+import "@fontsource-variable/spline-sans";
+import "@fontsource-variable/spline-sans-mono";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body
+        class="flex flex-col min-h-full mx-auto h-auto justify-center pt-16 px-8 sm:pt-24 max-w-3xl antialiased font-mono accent-starla-soft-accent"
+    >
+        <Header />
+        <slot />
+        <Footer />
+    </body>
+</html>
+<style lang="scss" is:global>
+    @use "_variables.scss";
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ::selection {
+        background: variables.$starla-light;
+    }
+    body {
+        color: variables.$starla-dblue;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    h1,
+    p,
+    span,
+    li {
+        animation: appear-animation 1s ease-out;
+        transform-origin: bottom;
+
+        @keyframes appear-animation {
+            0% {
+                opacity: 0;
+                filter: blur(2px);
+                transform: translateY(12px);
+            }
+            100% {
+                opacity: 1;
+                filter: blur(0);
+                transform: translateY(0);
+            }
+        }
+    }
+</style>
