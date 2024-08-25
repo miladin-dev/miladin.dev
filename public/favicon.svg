@@ -1,37 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 700 700" width="700" height="700">
-  <defs>
-    <radialGradient id="gggrain-gradient" r="0.5">
-      <stop offset="0%" stop-color="hsl(0, 24%, 23%)"></stop>
-      <stop offset="50%" stop-color="hsl(227, 21%, 30%)"></stop>
-      <stop offset="100%" stop-color="hsla(122, 15%, 17%, 1.00)"></stop>
-    </radialGradient>
-    <filter id="gggrain-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
-      primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" seed="2" stitchTiles="stitch" x="0%" y="0%"
-        width="100%" height="100%" result="turbulence"></feTurbulence>
-      <feColorMatrix type="saturate" values="0" x="0%" y="0%" width="100%" height="100%" in="turbulence"
-        result="colormatrix"></feColorMatrix>
-      <feComponentTransfer x="0%" y="0%" width="100%" height="100%" in="colormatrix" result="componentTransfer">
-        <feFuncR type="linear" slope="3"></feFuncR>
-        <feFuncG type="linear" slope="3"></feFuncG>
-        <feFuncB type="linear" slope="3"></feFuncB>
-      </feComponentTransfer>
-      <feColorMatrix x="0%" y="0%" width="100%" height="100%" in="componentTransfer" result="colormatrix2" type="matrix"
-        values="1 0 0 0 0
-          0 1 0 0 0
-          0 0 1 0 0
-          0 0 0 19 -11"></feColorMatrix>
-    </filter>
-    <filter id="gggrain-saturate" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
-      primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feColorMatrix type="saturate" values="3" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic"
-        result="colormatrix"></feColorMatrix>
-    </filter>
-  </defs>
-  <g filter="url(#gggrain-saturate)">
-    <rect width="100%" height="100%" fill="url(#gggrain-gradient)"></rect>
-    <rect width="100%" height="100%" fill="transparent" filter="url(#gggrain-filter)" opacity="1"
-      style="mix-blend-mode: soft-light"></rect>
-  </g>
+<svg width="557" height="519" viewBox="0 0 557 519" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.678 45.2443L144.863 45.2409L221.979 178.798L67.7577 178.792L119.168 267.83L273.391 267.837L350.506 401.393L453.322 401.397L376.205 267.84L530.428 267.847L479.016 178.807L324.795 178.802L247.678 45.2443Z" fill="#175C9A"/>
+<path d="M102.839 117.877L144.815 45.1782L221.975 178.906L138.27 178.533L102.839 117.877Z" fill="#B5E4FD"/>
+<path d="M25.7098 251.469L67.6882 178.766L119.221 267.895L77.2531 340.602L25.7098 251.469Z" fill="#B5E4FD"/>
+<path d="M77.255 340.602L119.23 267.9L273.444 267.754L231.469 340.456L77.255 340.602Z" fill="#00224D"/>
+<path d="M231.467 340.455L273.442 267.753L350.422 401.379L308.447 474.081L231.467 340.455Z" fill="#B5E4FD"/>
+<path d="M308.444 474.08L350.42 401.376L453.376 401.444L411.442 474.08L308.444 474.08Z" fill="#00224D"/>
+<path d="M488.509 340.607L530.51 267.859L376.115 267.898L418.015 340.517L488.509 340.607Z" fill="#00224D"/>
 </svg>
