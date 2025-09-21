@@ -5,64 +5,55 @@ import Link from "../layouts/Link.astro";
 ---
 
 <Container title="miladin.dev">
-	<main class="divide-y divide-dashed text-sm">
+	<main class="divide-y divide-dashed text-base">
 		<section
 			class="hover:underline hover:decoration-dashed hover:decoration-starla-light hover:decoration-1 underline-offset-2"
 		>
 			<p>
-				I'm a software engineer at Google with interests in Go,
-				containerized infrastructure, distributed systems, databases and
-				few other things.
+				I’m a software engineer at Google with interests in cloud,
+				networking, infrastructure, and distributed systems.
 			</p>
+			<p>In my free time, I enjoy reading research papers on AI/ML.</p>
 		</section>
 		<section
-			class="hover:underline hover:decoration-dashed hover:decoration-starla-light hover:decoration-1 hover:underline-offset-2"
+			class="hover:underline hover:decoration-dashed hover:decoration-starla-light hover:decoration-1 underline-offset-2"
 		>
 			<p>
-				Before joining Google, I've spent 3 years at <Link
+				Before joining Google, I've spent 3 years at startup - <Link
 					href="https://strong.network"
 					><span
 						class="underline underline-offset-2 hover:decoration-starla-accent hover:decoration-2"
 						>strong.network</span
 					></Link
-				>, a startup that was <Link
-					href="https://www.citrix.com/blogs/2024/12/10/citrix-acquires-devicetrust-and-strong-network/"
-				>
-					<span
-						class="underline underline-offset-2 hover:decoration-starla-accent hover:decoration-2"
-						>acquired by Citrix</span
-					></Link
-				>, where we create cloud dev environment platform that enables
-				VS Code to run remotely inside a browser, with focus on security
-				and compliance.
+				>.
+				<p>
+					I was part of the initial engineering team where we worked
+					on creating a self-hosted platform that allows organizations
+					to create secure linux cloud dev environments. Worked a lot
+					with containers, their security and internals, networking,
+					infrastructure and real-time distributed systems.
+				</p>
+				<br />
+				<p>
+					Our team got <Link
+						href="https://www.citrix.com/blogs/2024/12/10/citrix-acquires-devicetrust-and-strong-network/"
+					>
+						<span
+							class="underline underline-offset-2 hover:decoration-starla-accent hover:decoration-2"
+							>acquired by Citrix, (Cloud Software Group)</span
+						></Link
+					> in November 2024.
+				</p>
 			</p>
-			<br />
-			<p>Cool things I did at startup between the coffee breaks:</p>
-			<ul>
-				<li>
-					Created and contributed to custom HTTP & DNS proxies using
-					Go, making it in compliance with platform enforced network
-					policies.
-				</li>
-				<li>
-					Implemented end-to-end encryption between the services
-					inside the cluster.
-				</li>
-				<li>Developed real-time logs of workspace/pod state.</li>
-				<li>
-					Created a WebSocket-based web terminal for SSH connections
-					to the remote dev environment.
-				</li>
-			</ul>
 		</section>
 		<section
-			class="flex sm:gap-24 gap-16 pt-32 justify-center text-starla-black"
+			class="flex sm:gap-24 gap-16 !pt-[50px] justify-center text-starla-black"
 		>
 			<Link href="https://github.com/miladin-dev">
 				<Icon
 					name="links/github"
 					title="GitHub"
-					size="20"
+					size="25"
 					class="text-starla-dblue hover:text-starla-blue drop-shadow-md"
 				/>
 			</Link>
@@ -70,7 +61,7 @@ import Link from "../layouts/Link.astro";
 				<Icon
 					name="links/linkedin"
 					title="LinkedIn"
-					size="20"
+					size="25"
 					class="text-starla-dblue hover:text-starla-blue drop-shadow-md"
 				/>
 			</Link>
@@ -78,15 +69,15 @@ import Link from "../layouts/Link.astro";
 				<Icon
 					name="links/envelope-fill"
 					title="Email"
-					size="20"
+					size="25"
 					class="text-starla-dblue hover:text-starla-blue drop-shadow-md"
 				/>
 			</Link>
-			<Link href="https://x.com/wonydev">
+			<Link href="https://x.com/miladindev">
 				<Icon
 					name="links/x"
 					title="X/Twitter"
-					size="20"
+					size="25"
 					class="text-starla-dblue hover:text-starla-blue drop-shadow-md"
 				/>
 			</Link>
